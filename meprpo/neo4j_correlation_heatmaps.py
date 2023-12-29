@@ -5,9 +5,6 @@ from .neo4j_display_distances import display_node_info
 from .neo4j_calculate_correlations import calculate_correlations
 
 
-# from .neo4j_display_edges import display_node_info_edges_counts
-
-
 def neo4j_correlation_heatmaps(uri, username, password, include_kendall=False):
     neo4j_connector = connect_to_neo4j(uri, username, password)
 
@@ -17,11 +14,7 @@ def neo4j_correlation_heatmaps(uri, username, password, include_kendall=False):
                                      'output_folder/init_folder/node_to_node_distances.csv',
                                      'output_folder/init_folder/nodes_from_graph_distances.csv')
         display_node_info(session)
-        # display_node_info_edges_counts(session)
 
         # Specify the folder containing individual label CSV files
         label_csv_folder = 'output_folder/labeled_csv_files'
         calculate_correlations(label_csv_folder, include_kendall)
-
-        # label_csv_folder_edges_counts = 'output_folder/labeled_csv_files_edges_counts'
-        # calculate_correlations(label_csv_folder_edges_counts, include_kendall)
