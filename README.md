@@ -1,10 +1,10 @@
 # Measuring-predictive-potential-in-graph-databases
 #
 #
-#from meprpo import *
+# from meprpo import *
 #
 #
-#def main():
+# def main():
 #    neo4j_uri = "neo4j://localhost:7687"
 #    neo4j_username = "neo4j"
 #    neo4j_password = "neo4j"
@@ -15,7 +15,7 @@
 #    neo4j_correlation_heatmaps(neo4j_uri, neo4j_username, neo4j_password, include_kendall=True)
 #
 #
-#if __name__ == "__main__":
+# if __name__ == "__main__":
 #    main()
 #
 ###
